@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = "A simple HTML generator for XCode UI Test"
   s.authors     = ["Sofia Swidarowicz"]
   s.email       = 'sofia.swidarowicz@gmail.com'
-  s.files       = ["lib/xcreporter.rb", "lib/xcsummary", "bin/xcreporter"]
+  s.files       = ["lib/xcreporter.rb", "lib/xcsummary", "bin/xcreporter", "lib/String.rb"]
   s.homepage    =
     'http://rubygems.org/gems/xcode-html-report'
   s.license       = 'MIT'
