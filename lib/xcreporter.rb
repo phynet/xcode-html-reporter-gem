@@ -4,14 +4,18 @@ require 'fileutils'
 class Reporter 
 	 
 	def copyLib
-	  dest_folder = "/usr/local/bin/"
-	  pathFile = Dir[File.dirname(__FILE__)]
-	  pathFile.each do |filepath|
-	  	puts "\033[33mcoping file xcsummary in... #{dest_folder}\033[0m"
-	  	name = 'xcsummary'	
-	  	FileUtils.cp(filepath+"/#{name}", dest_folder+"/#{name}")
-	  end
-	  printingMessages
+		begin
+		  dest_folder = "/usr/local/bin/"
+		  pathFile = Dir[File.dirname(__FILE__)]
+		  pathFile.each do |filepath|
+		  	puts "\033[33mcoping file xcsummary in... #{dest_folder}\033[0m"
+		  	name = 'xcsummary'	
+		  	FileUtils.cp(filepath+"/#{name}", dest_folder+"/#{name}")
+		  end
+		  printingMessages
+		rescue => ex
+        	UI.error("Something went wrong: #{ex}")
+      	end
 	end
 
 	def printingMessages
