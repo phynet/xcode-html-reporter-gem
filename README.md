@@ -15,7 +15,7 @@ Gem to instal xcsummary binary to create html reports for UI Test
      
  3.- Now you can run the command 'xcsummary' that throws and HTML formatted file
  
-    xcsummary -in ~/Desktop/build/1_Test/action_TestSummaries.plist -out ~/Develop/eDreams/build/reports/result.html
+    xcsummary -in ~/Desktop/build/1_Test/action_TestSummaries.plist -out ~/Develop/build/reports/result.html
  
  
 # FAQ
