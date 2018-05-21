@@ -40,11 +40,11 @@ the screenshot originally as: `Screenshot_0BA16EF6-FE9B-444F-A330-395789A6A5AD`
 
 So you must change the name of each screen shot to either `TESTSUITE_TESTMETHOD`, or just `TESTMETHOD` in a tear down step.
 
-You can read the thread mention this here: https://github.com/supermarin/xcpretty/issues/251 
+You can read the thread mention in here: https://github.com/supermarin/xcpretty/issues/251 
 
 But in our case we weren't using any screenshot from `XCUIApplication` and that meant to change all the test (no way José). Then I find out this repo
 https://github.com/MacPaw/xcsummary that does exactly what I wanted to, attaching the failed or success screenshots taken always by Xcode and creating a HTML style reporter.
 
-What I did was modifing some styling and creatin a gem to install it easly. 
+What I did was modifing some styling and creating a gem to install it easly. 
 
       
