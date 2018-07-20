@@ -4,7 +4,7 @@ Gem to instal xcsummary binary to create html reports for UI Test
 
 # Steps 
 
-1.-  *Download this project* and use in terminal the **'install'** gem command in the source path
+1.-  **Download this project** and use in terminal the **'install'** gem command in the source path
 
      gem install xcreporter 
      
